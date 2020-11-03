@@ -1,0 +1,1 @@
+https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js

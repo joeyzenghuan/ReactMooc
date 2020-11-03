@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../build/react.development.js"></script>
+    <script src="../build/react-dom.development.js"></script>
+    <script src="../build/babel.min.js"></script>
+  </head>
+
+
+  <body>
+    <div id="container"></div>
+    <script type="text/babel">
+        var destination = document.querySelector("#container");
+        
+
+        //ES6写法
+        // class HelloWorld extends React.Component{
+        //     render() {
+        //         return (
+        //             <div>
+        //                 <p> HelloWorld in index2!!</p>
+        //             </div>
+        //         );
+        //     }
+        // }
+
+        // ES5写法
+        // var HelloWorld = React.createClass({
+        //         render: function(){
+        //             return (
+        //                 <div>
+        //                     <p> HelloWorld in index2!!</p>
+        //                 </div>
+        //             );
+        //         }
+        //     });
+
+
+
+
+
+        ReactDOM.render(
+            // <HelloWorld/>,
+            <div>
+                lift circle.
+            </div>,
+
+            // <HelloComponent name="Sebastian"/>,
+            destination
+        );
+    </script>
+  </body>
+</html>

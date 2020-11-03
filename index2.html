@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index2test</title>
+        <script src="/jsLib15.5.0/react-dom.js"></script>
+        <script src="/jsLib15.5.0/react.js"></script>
+        <script src="/jsLib15.5.0/browser.min.js"></script>
+        <!-- <script src="/jsLib/react15.5.0.js"></script> -->
+        
+    </head>
+
+    <body>
+        <div id="container"></div>
+        <script type="text/babel">
+            var destination = document.querySelector("#container");
+            
+            var HelloWorld = React.createClass({
+                render: function(){
+                    return (
+                        <div>
+                            <p> HelloWorld in index2!!</p>
+                        </div>
+                    );
+                }
+            });
+
+            // function HelloComponent(props) {
+            //     return (
+            //         <div>
+            //             Hello {props.name}
+            //         </div>
+            //     );
+                
+            // }
+
+
+            ReactDOM.render(
+                <HelloWorld/>,
+                // <div>
+                //         <p> HelloWorld in index2!!</p>
+                //         </div>,
+
+                // <HelloComponent name="Sebastian"/>,
+                destination
+            );
+
+
+        </script>
+    </body>
+
+</html>
